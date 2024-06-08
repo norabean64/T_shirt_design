@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Design Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">T-Shirt Design Application</h1>
+        <form action="/submit" method="post" class="mt-4">
+            <div class="form-group">
+                <label for="user_input">Enter your design concept:</label>
+                <input type="text" id="user_input" name="user_input" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="design_style">Select Design Style:</label>
+                <select id="design_style" name="design_style" class="form-control">
+                    <option value="Abstract Art">Abstract Art</option>
+                    <option value="Minimalist Design">Minimalist Design</option>
+                    <option value="Vintage Style">Vintage Style</option>
+                    <option value="Modern Geometric">Modern Geometric</option>
+                    <option value="Pop Art">Pop Art</option>
+                    <option value="Surrealism">Surrealism</option>
+                    <option value="Futuristic">Futuristic</option>
+                    <option value="Retro">Retro</option>
+                    <option value="Nature Inspired">Nature Inspired</option>
+                    <option value="Urban Street Art">Urban Street Art</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="image_service">Select Image Generation Service:</label>
+                <select id="image_service" name="image_service" class="form-control">
+                    <option value="Stable Diffusion">Stable Diffusion</option>
+                    <option value="DALLE">DALLE</option>
+                    <option value="LeonardoAI">LeonardoAI</option>
+                    <option value="MidJourney">MidJourney</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
